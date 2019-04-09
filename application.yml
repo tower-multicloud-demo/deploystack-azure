@@ -5,7 +5,7 @@
   become: yes
   remote_user: azureuser
   tasks:
-    - name: Install Apache from its role on {{ scope }} instances
+    - name: Install Apache from its role
       include_role:
         name: role-app
         
