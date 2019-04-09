@@ -1,0 +1,10 @@
+---
+- name: Create Azure Infrastructure
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Including azure role for infrastructure creation
+      include_role:
+        name: role-azure
+      
